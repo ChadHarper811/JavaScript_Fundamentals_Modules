@@ -1,4 +1,5 @@
 import chalk from 'chalk';
+import { logObject } from './logging.js';
 
 // console.log(`${chalk.blue.bold('First Name: ')} David`);
 // console.log(`${chalk.green.bold('Last Name: ')} Tucker`);
@@ -13,3 +14,5 @@ const employee = {
     dateBirth: "1988-02-08",
     isActive: true
 };
+
+logObject(employee);
