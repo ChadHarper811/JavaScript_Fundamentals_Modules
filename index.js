@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import { logObject } from './logging.js';
+import { logObject, numEmployeesLogged } from './logging.js';
 
 // console.log(`${chalk.blue.bold('First Name: ')} David`);
 // console.log(`${chalk.green.bold('Last Name: ')} Tucker`);
@@ -16,3 +16,5 @@ const employee = {
 };
 
 logObject(employee);
+logObject(employee);
+console.log(`${chalk.red('Employees Logged: ')} ${chalk.gray.bold(numEmployeesLogged)}`);
